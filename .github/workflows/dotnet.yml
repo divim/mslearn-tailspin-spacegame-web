@@ -23,5 +23,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      - name: App Service Web App Build Action
-        uses: Azure/appservice-build@v2
+    - name: App Service Web App Build Action
+      uses: Azure/appservice-build@v2
+      with:
+        app-name: azqatar-mslearn-tailspin-spacegame-web
