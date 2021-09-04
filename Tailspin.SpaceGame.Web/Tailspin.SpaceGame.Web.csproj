@@ -8,6 +8,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\avatars\" />
   </ItemGroup>
+
   <ItemGroup>
     <Content Remove="SampleData\profiles.json" />
     <Content Remove="SampleData\scores.json" />
@@ -29,5 +30,7 @@
     <EmbeddedResource Include="SampleData\scores.json">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </EmbeddedResource>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.18.0" />
   </ItemGroup>
 </Project>
